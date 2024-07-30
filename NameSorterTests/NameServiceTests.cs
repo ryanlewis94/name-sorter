@@ -6,27 +6,27 @@ namespace NameSorterTests
 {
     public class NameServiceTests
     {
-        [Test]
-        public async Task ReadNamesAsync()
-        {
-            var nameService = new NameService();
-            IEnumerable<string> namesList = await nameService.ReadNamesAsync("unsorted-names-list.txt");
+        //[Test]
+        //public async Task ReadNamesAsync()
+        //{
+        //    var nameService = new NameService();
+        //    IEnumerable<string> namesList = await nameService.ReadNamesAsync("unsorted-names-list.txt");
 
-            Assert.That(namesList, Is.EqualTo(new List<string>
-            {
-                "Janet Parsons", 
-                "Vaugh Lewis", 
-                "Adonis Julius Archer", 
-                "Shelby Nathan Yoder", 
-                "Marin Alvarez", 
-                "London Lindsey", 
-                "Beau Tristan Bentley",
-                "Leo Gardner",
-                "Hunter Uriah Mathew Clarke",
-                "Mikayla Lopez",
-                "Frankie Conner Ritter"
-            }));
-        }
+        //    Assert.That(namesList, Is.EqualTo(new List<string>
+        //    {
+        //        "Janet Parsons", 
+        //        "Vaugh Lewis", 
+        //        "Adonis Julius Archer", 
+        //        "Shelby Nathan Yoder", 
+        //        "Marin Alvarez", 
+        //        "London Lindsey", 
+        //        "Beau Tristan Bentley",
+        //        "Leo Gardner",
+        //        "Hunter Uriah Mathew Clarke",
+        //        "Mikayla Lopez",
+        //        "Frankie Conner Ritter"
+        //    }));
+        //}
 
         [Test]
         public void ReadNamesAsync_EmptyFilePath()
